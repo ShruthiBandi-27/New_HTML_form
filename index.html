@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table{
+            width: 100%;
+            margin-top: 6px;
+        }
+        table,th,tr {
+            border-collapse: collapse;
+        }
+        tr:nth-child(even){
+            background-color: #E7E7E7;
+        }
+        td{
+            width: 10%;
+            font-size: 13px;
+            text-align: center;
+            padding: 3px;
+        }
+        .myform{
+            width: 50%;
+            
+            margin:auto
+        }
+        .star{
+            font-size: 30px;
+            color: orange;
+        }
+
+        sup{
+            font-size: 7px;
+            color: red;
+        }
+
+        pre{
+            display: inline;
+        }
+
+        label{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        span{
+            font-size: 11px;
+            font-weight: initial;
+            margin-right: 160px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="myform">
+    <form action="https://www.guvi.in" method="post">
+        <fieldset>
+            <label>Name<sup>&#9733;</sup></label><br>
+            <input type="text" id="fname" name="fname" required/>&nbsp;&nbsp;
+            <input type="text" id="lname" name="lname"/><br>
+            
+            <label><span>First</span></label>
+            <label><span>Last</span></label><br><br>
+
+            <label>Email<sup>&#9733;</sup></label><br>
+            <input type="email" id="email" name="email" required/>
+            <br><br>
+            <label>Your Experience<sup>&#9733;</sup></label><br>
+            <div class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <small>Overall, how much you rate your experience with us?</small>
+            <br><br>
+
+            <label>How satisfied are you with<sup>&#9733;</sup></label><br>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Very Unsatisfied</td>
+                    <td>Unsatisfied</td>
+                    <td>Neutral</td>
+                    <td>Satisfied</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Purchase</th>
+                    <td><input type="radio" name="purchase" id="p1"/></td>
+                    <td><input type="radio"name="purchase" id="p2"/></td>
+                    <td><input type="radio" name="purchase" id="p3"/></td>
+                    <td><input type="radio" name="purchase" id="p4"/></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Service</td>
+                    <td ><input type="radio" name="service" id="s1"></td>
+                    <td><input type="radio" name="service" id="s2"></td>
+                    <td><input type="radio" name="service" id="s3"></td>
+                    <td><input type="radio" name="service" id="s4"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Company Overall</td>
+                    <td><input type="radio" name="overall" id="o1"></td>
+                    <td><input type="radio" name="overall" id="o2"></td>
+                    <td><input type="radio" name="overall" id="o3"></td>
+                    <td><input type="radio" name="overall" id="o4"></td>
+                </tr>
+            </table>
+            <br>
+            <label>How likely are you to<sup>&#9733;</sup></label><br>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Very Unlikely</td>
+                    <td>Unlikely</td>
+                    <td>Neutral</td>
+                    <td>Likely</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Buy from us again</td>
+                    <td><input type="radio" name="buy" id="b1"></td>
+                    <td><input type="radio" name="buy" id="b2"></td>
+                    <td><input type="radio" name="buy" id="b3"></td>
+                    <td><input type="radio" name="buy" id="b4"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Recommend our <br/>product to others</td>
+                    <td><input type="radio" name="others" id="ot1"></td>
+                    <td><input type="radio" name="others" id="ot2"></td>
+                    <td><input type="radio" name="others" id="ot3"></td>
+                    <td><input type="radio" name="others" id="ot4"></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Recommend our <br/>company to others</td>
+                    <td><input type="radio" name="cpy" id="c1"></td>
+                    <td><input type="radio" name="cpy" id="c2"></td>
+                    <td><input type="radio" name="cpy" id="c3"></td>
+                    <td><input type="radio" name="cpy" id="c4"></td>
+                </tr>
+            </table>
+            <br>
+            <label>Additional comments or suggestions</label>
+            <br>
+            <textarea rows="6"  style="width: 100%;">
+            </textarea><br>
+
+            <button type="submit" value="Submit">Submit</button>
+        </fieldset>
+    </form>
+</div>
+    
+</body>
+</html>
